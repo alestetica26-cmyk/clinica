@@ -186,23 +186,21 @@ header {
     color: var(--gold-dark);
 }
 
-/* BANNER MODIFICADO */
+/* BANNER COM IMAGEM LOCAL */
 .hero {
     min-height: 640px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-
     background:
         linear-gradient(
             90deg,
             rgba(250,248,244,.98) 0%,
             rgba(250,248,244,.92) 43%,
-            rgba(250,248,244,.12) 100 tracking
+            rgba(250,248,244,.12) 100%
         ),
-        url('img/image_qGNT9L.png') /* Aponta para sua nova imagem do rosto */
-        center 35% / cover no-repeat;
+        url('img/image_qGNT9L.png') center 35% / cover no-repeat;
 }
 
 .hero-content {
@@ -253,8 +251,7 @@ header {
     color: var(--muted);
 }
 
-/* FAIXA */
-
+/* FAIXA INFORMATIVA */
 .info-strip {
     background: var(--white);
     border-bottom: 1px solid #f0ece5;
@@ -295,7 +292,7 @@ header {
     color: var(--muted);
 }
 
-/* SOBRE MODIFICADO */
+/* SOBRE COM IMAGEM LOCAL */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -306,9 +303,7 @@ header {
 .about-image {
     min-height: 490px;
     position: relative;
-    background:
-        url('img/image_C1ft4l.png') /* Aponta para sua nova imagem de aplicação */
-        center / cover no-repeat;
+    background: url('img/image_C1ft4l.png') center / cover no-repeat;
 }
 
 .image-caption {
@@ -363,7 +358,6 @@ header {
 }
 
 /* BENEFÍCIOS */
-
 .benefits {
     background: var(--cream);
 }
@@ -402,7 +396,6 @@ header {
 }
 
 /* EVENTO */
-
 .event {
     background: #fff;
 }
@@ -471,7 +464,61 @@ header {
 </head>
 <body>
 
-<!-- O restante do corpo (body) do seu arquivo original continua aqui abaixo sem alterações -->
+<div class="topbar">
+    ✨ Vagas limitadas para o evento exclusivo deste mês!
+</div>
 
-</body>
-</html>
+<header>
+    <div class="container nav">
+        <a href="#" class="logo">
+            BOTOX DAY
+            <small>Estética Avançada</small>
+        </a>
+        <nav class="nav-links">
+            <a href="#sobre">O Evento</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#agendar" class="btn">Agendar Horário</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-label">Evento Exclusivo</span>
+            <h1>Beleza, Leveza e <span>Naturalidade</span></h1>
+            <p>Um dia totalmente dedicado para renovar sua autoestima. Aplicação de toxina botulínica com foco em resultados elegantes e naturais.</p>
+            <div class="hero-buttons">
+                <a href="#agendar" class="btn">Garantir Minha Vaga</a>
+                <a href="#sobre" class="btn btn-outline">Saiba Mais</a>
+            </div>
+            <p class="hero-note">*Consulte condições e horários disponíveis.</p>
+        </div>
+    </div>
+</section>
+
+<div class="info-strip">
+    <div class="container info-grid">
+        <div class="info-item">
+            <div class="info-icon">📅</div>
+            <div>
+                <strong>Data Exclusiva</strong>
+                <span>Agende seu período</span>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-icon">💎</div>
+            <div>
+                <strong>Condições Especiais</strong>
+                <span>Apenas no Botox Day</span>
+            </div>
+        </div>
+        <div class="info-item">
+            <div class="info-icon">☕</div>
+            <div>
+                <strong>Experiência Premium</strong>
+                <span>Coffee break e mimos</span>
+            </div>
+        </div>
+    </div>
+</div>
