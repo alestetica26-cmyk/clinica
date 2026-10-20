@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Botox Day | A&L Estética Avançada</title>
+<title>Botox Day | Beleza, Leveza e Naturalidade</title>
 
 <meta name="description"
 content="Um dia especial dedicado à sua beleza e autoestima. Conheça nosso Botox Day e agende seu horário pelo WhatsApp.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://googleapis.com"
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
 rel="stylesheet">
 
 <style>
@@ -118,11 +118,9 @@ button {
 .btn-outline {
     background: transparent;
     color: var(--gold-dark);
-    border: 1px solid var(--gold-dark);
 }
 
 .btn-outline:hover {
-    background: var(--gold-dark);
     color: white;
 }
 
@@ -179,31 +177,33 @@ header {
     color: var(--gold-dark);
 }
 
-/* BANNER ATUALIZADO */
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--gold-dark);
+}
+
+/* BANNER */
+
 .hero {
     min-height: 640px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: 
+
+    background:
         linear-gradient(
             90deg,
-            rgba(250,248,244,0.95) 0%,
-            rgba(250,248,244,0.85) 45%,
-            rgba(250,248,244,0.10) 100⁒
+            rgba(250,248,244,.98) 0%,
+            rgba(250,248,244,.92) 43%,
+            rgba(250,248,244,.12) 100%
         ),
-        url('img/novo-topo-botox.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-.hero .container {
-    position: relative;
-    z-index: 10;
-    width: 100%;
+        url('img/novo-topo-botox.jpg')
+        center 35% / cover no-repeat;
 }
 
 .hero-content {
@@ -255,6 +255,7 @@ header {
 }
 
 /* FAIXA */
+
 .info-strip {
     background: var(--white);
     border-bottom: 1px solid #f0ece5;
@@ -296,6 +297,7 @@ header {
 }
 
 /* SOBRE */
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -363,6 +365,7 @@ header {
 }
 
 /* BENEFÍCIOS */
+
 .benefits {
     background: var(--cream);
 }
@@ -400,77 +403,8 @@ header {
     color: var(--muted);
 }
 
-/* VALORES */
-.pricing {
-    background: var(--cream);
-    border-top: 1px solid #f0ece5;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.price-card {
-    background: var(--white);
-    border: 1px solid #eee8de;
-    padding: 45px 35px;
-    text-align: center;
-    border-radius: 4px;
-    position: relative;
-    transition: .3s;
-}
-
-.price-card.featured {
-    border: 2px solid var(--gold);
-    box-shadow: 0 10px 30px rgba(196,165,116,0.15);
-}
-
-.badge {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--gold-dark);
-    color: white;
-    padding: 5px 15px;
-    font-size: .75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 20px;
-}
-
-.price-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: var(--text);
-}
-
-.price-value {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.2rem;
-    color: var(--gold-dark);
-    font-weight: 600;
-    margin: 20px 0;
-}
-
-.price-value small {
-    font-size: 1.2rem;
-    font-family: 'DM Sans', sans-serif;
-    color: var(--muted);
-}
-
-.price-card p {
-    color: var(--muted);
-    font-size: .95rem;
-    margin-bottom: 25px;
-}
-
 /* EVENTO */
+
 .event {
     background: #fff;
 }
@@ -548,12 +482,40 @@ header {
     <header>
         <div class="container nav">
             <div class="logo">
-                A&L
+                Botox Day
                 <small>Estética Avançada</small>
             </div>
             <div class="nav-links">
                 <a href="#sobre">Sobre</a>
                 <a href="#beneficios">Benefícios</a>
-                <a href="#valores">Valores</a>
                 <a href="#" class="btn btn-whatsapp" target="_blank">Agendar Horário</a>
             </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label">Evento Exclusivo</span>
+                <h1>Sua Beleza <span>Natural</span></h1>
+                <p>Participe do nosso Botox Day. Um momento dedicado a realçar sua juventude com leveza, segurança e resultados sofisticados.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-whatsapp" target="_blank">Quero Garantir Minha Vaga</a>
+                </div>
+                <p class="hero-note">*Vagas estritamente limitadas para garantir atendimento personalizado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section container about-grid">
+        <div class="about-image">
+            <div class="image-caption">
+                <strong>Resultados Reais</strong>
+                <span>Procedimentos realizados por especialistas credenciados.</span>
+            </div>
+        </div>
+        <div class="about-text">
+            <span class="eyebrow">O Evento</span>
+            <h2>Beleza, Leveza e Autoconfiança</h2>
+            <p>O Botox Day foi planejado para quem busca suavizar linhas de expressão mantendo a total naturalidade do rosto.</p>
+            <p>Nossa equipe utiliza as melhores marcas do mercado mundial e técnicas modernas de aplicação anatômica.</p>
