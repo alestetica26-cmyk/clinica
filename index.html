@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Botox Day | Beleza, Leveza e Naturalidade</title>
+<title>Botox Day | A&L Estética Avançada</title>
 
 <meta name="description"
 content="Um dia especial dedicado à sua beleza e autoestima. Conheça nosso Botox Day e agende seu horário pelo WhatsApp.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+<link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
 rel="stylesheet">
 
 <style>
@@ -118,9 +118,11 @@ button {
 .btn-outline {
     background: transparent;
     color: var(--gold-dark);
+    border: 1px solid var(--gold-dark);
 }
 
 .btn-outline:hover {
+    background: var(--gold-dark);
     color: white;
 }
 
@@ -177,24 +179,13 @@ header {
     color: var(--gold-dark);
 }
 
-.menu-toggle {
-    display: none;
-    border: 0;
-    background: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--gold-dark);
-}
-
 /* BANNER */
-
 .hero {
     min-height: 640px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-
     background:
         linear-gradient(
             90deg,
@@ -255,7 +246,6 @@ header {
 }
 
 /* FAIXA */
-
 .info-strip {
     background: var(--white);
     border-bottom: 1px solid #f0ece5;
@@ -297,7 +287,6 @@ header {
 }
 
 /* SOBRE */
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -365,7 +354,6 @@ header {
 }
 
 /* BENEFÍCIOS */
-
 .benefits {
     background: var(--cream);
 }
@@ -403,8 +391,77 @@ header {
     color: var(--muted);
 }
 
-/* EVENTO */
+/* VALORES */
+.pricing {
+    background: var(--cream);
+    border-top: 1px solid #f0ece5;
+}
 
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.price-card {
+    background: var(--white);
+    border: 1px solid #eee8de;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    transition: .3s;
+}
+
+.price-card.featured {
+    border: 2px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(196,165,116,0.15);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold-dark);
+    color: white;
+    padding: 5px 15px;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.price-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+.price-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    color: var(--gold-dark);
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.price-value small {
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--muted);
+}
+
+.price-card p {
+    color: var(--muted);
+    font-size: .95rem;
+    margin-bottom: 25px;
+}
+
+/* EVENTO */
 .event {
     background: #fff;
 }
@@ -474,1148 +531,27 @@ header {
     color: var(--muted);
     font-size: .86rem;
 }
-
-.countdown {
-    display: flex;
-    gap: 12px;
-    margin: 30px 0;
-}
-
-.countdown-box {
-    min-width: 67px;
-    background: white;
-    border: 1px solid #eee4d5;
-    text-align: center;
-    padding: 12px 8px;
-}
-
-.countdown-box strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    color: var(--gold-dark);
-}
-
-.countdown-box span {
-    text-transform: uppercase;
-    font-size: .63rem;
-    color: var(--muted);
-}
-
-/* CTA */
-
-.cta {
-    padding: 85px 0;
-    text-align: center;
-    background:
-        linear-gradient(rgba(250,248,244,.93), rgba(250,248,244,.93)),
-        url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1800&q=85')
-        center / cover;
-}
-
-.cta h2 {
-    font-size: clamp(2.2rem, 5vw, 3.7rem);
-    max-width: 750px;
-    margin: 15px auto 20px;
-}
-
-.cta p {
-    max-width: 580px;
-    margin: 0 auto 30px;
-    color: var(--muted);
-}
-
-/* FAQ */
-
-.faq-list {
-    max-width: 800px;
-    margin: auto;
-}
-
-.faq-item {
-    border-bottom: 1px solid #e9e3d9;
-}
-
-.faq-question {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    background: none;
-    border: none;
-    padding: 23px 0;
-    text-align: left;
-    font-size: .98rem;
-    font-weight: 600;
-    color: var(--text);
-    cursor: pointer;
-}
-
-.faq-question span:last-child {
-    color: var(--gold-dark);
-    font-size: 1.4rem;
-}
-
-.faq-answer {
-    display: none;
-    padding: 0 25px 23px 0;
-    color: var(--muted);
-    font-size: .9rem;
-}
-
-.faq-item.active .faq-answer {
-    display: block;
-}
-
-.faq-item.active .faq-question span:last-child {
-    transform: rotate(45deg);
-}
-
-/* RODAPÉ */
-
-footer {
-    background: #f5f0e8;
-    padding: 45px 0 30px;
-    text-align: center;
-}
-
-.footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: var(--gold-dark);
-}
-
-footer p {
-    max-width: 650px;
-    margin: 15px auto;
-    color: var(--muted);
-    font-size: .8rem;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    font-size: .82rem;
-}
-
-.copyright {
-    border-top: 1px solid #e7dece;
-    margin-top: 30px;
-    padding-top: 20px;
-    font-size: .75rem;
-    color: var(--muted);
-}
-
-/* WHATSAPP */
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--green);
-    color: white;
-    display: grid;
-    place-items: center;
-    font-size: 1.8rem;
-    z-index: 999;
-    box-shadow: 0 5px 20px #00000020;
-    transition: .3s;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.08);
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity .7s ease, transform .7s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* CELULAR */
-
-@media (max-width: 850px) {
-    .nav-links {
-        gap: 15px;
-    }
-
-    .nav-links .btn {
-        padding: 11px 14px;
-    }
-
-    .about-grid {
-        gap: 40px;
-    }
-
-    .event-details {
-        padding: 35px;
-    }
-}
-
-@media (max-width: 650px) {
-    .section {
-        padding: 70px 0;
-    }
-
-    header {
-        height: 72px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 25px 5%;
-        flex-direction: column;
-        align-items: stretch;
-        border-bottom: 1px solid #eee8de;
-        box-shadow: 0 15px 25px #00000008;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-links .btn {
-        text-align: center;
-    }
-
-    .hero {
-        min-height: 690px;
-        background:
-            linear-gradient(
-                90deg,
-                rgba(250,248,244,.96),
-                rgba(250,248,244,.78)
-            ),
-            url('https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1000&q=85')
-            center / cover no-repeat;
-    }
-
-    .hero-content {
-        padding: 65px 0;
-    }
-
-    .hero h1 {
-        font-size: 3.35rem;
-    }
-
-    .hero p {
-        font-size: .95rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .info-grid {
-        grid-template-columns: 1fr;
-        gap: 23px;
-        padding: 25px 0;
-    }
-
-    .info-item {
-        justify-content: flex-start;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .about-image {
-        min-height: 350px;
-        margin-right: 12px;
-        margin-bottom: 15px;
-    }
-
-    .image-caption {
-        right: -12px;
-        bottom: -15px;
-    }
-
-    .benefit-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .benefit-card {
-        padding: 28px;
-    }
-
-    .event-card {
-        grid-template-columns: 1fr;
-    }
-
-    .event-date {
-        padding: 30px;
-    }
-
-    .event-date .day {
-        font-size: 5rem;
-    }
-
-    .event-details {
-        padding: 30px 23px;
-    }
-
-    .event-details h3 {
-        font-size: 1.7rem;
-    }
-
-    .countdown {
-        gap: 7px;
-    }
-
-    .countdown-box {
-        flex: 1;
-        min-width: 0;
-        padding: 10px 4px;
-    }
-
-    .countdown-box strong {
-        font-size: 1.35rem;
-    }
-
-    .whatsapp-float {
-        width: 54px;
-        height: 54px;
-        bottom: 17px;
-        right: 17px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *, *::before, *::after {
-        animation-duration: .01ms !important;
-        transition-duration: .01ms !important;
-    }
-
-    .reveal {
-        opacity: 1;
-        transform: none;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<!--
-PERSONALIZAÇÃO:
-Edite as informações no objeto CONFIG no final deste arquivo.
--->
-
-<div class="topbar">
-    ✨ Um momento especial de cuidado e beleza • 07 de novembro
-</div>
-
-<header>
-    <div class="container nav">
-
-        <a href="#inicio" class="logo">
-            Sua Clínica
-            <small>Estética & Beleza</small>
-        </a>
-
-        <button class="menu-toggle"
-                id="menuToggle"
-                aria-label="Abrir menu"
-                aria-expanded="false">
-            ☰
-        </button>
-
-        <nav class="nav-links" id="navLinks">
-            <a href="#sobre">O evento</a>
-            <a href="#beneficios">A experiência</a>
-            <a href="#evento">Data e local</a>
-            <a href="#duvidas">Dúvidas</a>
-            <a href="#" class="btn whatsapp-link">
-                Agendar horário ↗
-            </a>
-        </nav>
-
-    </div>
-</header>
-
-<main>
-
-<!-- BANNER PRINCIPAL -->
-
-<section class="hero" id="inicio">
-    <div class="container">
-        <div class="hero-content">
-
-            <span class="hero-label">
-                Uma experiência especial de beleza
-            </span>
-
-            <h1>
-                Sua beleza,<br>
-                com mais <span>leveza.</span>
-            </h1>
-
-            <p>
-                Um dia dedicado a você, ao autocuidado e à valorização
-                da sua beleza natural. Conheça nosso Botox Day e
-                descubra uma experiência pensada para você.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#" class="btn whatsapp-link">
-                    ✨ Quero agendar meu horário
-                </a>
-
-                <a href="#sobre" class="btn btn-outline">
-                    Conheça o evento ↓
-                </a>
+    <header>
+        <div class="container nav">
+            <div class="logo">
+                A&L
+                <small>Estética Avançada</small>
             </div>
-
-            <div class="hero-note">
-                Atendimento mediante agendamento e avaliação profissional.
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- INFORMAÇÕES RÁPIDAS -->
-
-<section class="info-strip">
-    <div class="container info-grid">
-
-        <div class="info-item">
-            <div class="info-icon">♧</div>
-            <div>
-                <strong>Experiência personalizada</strong>
-                <span>Seu cuidado em primeiro lugar</span>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#valores">Valores</a>
+                <a href="#" class="btn btn-whatsapp" target="_blank">Agendar Horário</a>
             </div>
         </div>
-
-        <div class="info-item">
-            <div class="info-icon">♡</div>
-            <div>
-                <strong>Beleza com naturalidade</strong>
-                <span>Respeito à sua individualidade</span>
-            </div>
-        </div>
-
-        <div class="info-item">
-            <div class="info-icon">◷</div>
-            <div>
-                <strong>Horário reservado</strong>
-                <span>Agendamento pelo WhatsApp</span>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- SOBRE O BOTOX DAY -->
-
-<section class="section" id="sobre">
-    <div class="container about-grid">
-
-        <div class="about-image reveal">
-            <div class="image-caption">
-                <strong>Seu momento.</strong>
-                <span>Seu cuidado. Sua beleza.</span>
-            </div>
-        </div>
-
-        <div class="about-text reveal">
-            <span class="eyebrow">Muito além da estética</span>
-
-            <h2>
-                Um convite para cuidar de você.
-            </h2>
-
-            <p>
-                O Botox Day é uma oportunidade para conhecer melhor
-                os tratamentos estéticos, esclarecer suas dúvidas e
-                receber uma avaliação individualizada.
-            </p>
-
-            <p>
-                Cada rosto tem sua beleza e suas particularidades.
-                Por isso, a proposta é valorizar sua expressão,
-                respeitando suas características e expectativas.
-            </p>
-
-            <ul class="check-list">
-                <li>Atendimento com avaliação individual.</li>
-                <li>Orientações sobre o procedimento e seus cuidados.</li>
-                <li>Planejamento de acordo com suas necessidades.</li>
-                <li>Agendamento organizado para o dia do evento.</li>
-            </ul>
-
-            <a href="#" class="btn whatsapp-link">
-                Quero saber mais pelo WhatsApp ↗
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- BENEFÍCIOS -->
-
-<section class="section benefits" id="beneficios">
-    <div class="container">
-
-        <div class="section-title reveal">
-            <span class="eyebrow">Uma experiência para você</span>
-
-            <h2>
-                Cuidado em cada detalhe.
-            </h2>
-
-            <p>
-                Um atendimento pensado para que você se sinta
-                acolhida, informada e segura em cada etapa.
-            </p>
-        </div>
-
-        <div class="benefit-grid">
-
-            <article class="benefit-card reveal">
-                <div class="benefit-icon">✧</div>
-
-                <h3>Avaliação individual</h3>
-
-                <p>
-                    Uma conversa para compreender suas expectativas,
-                    avaliar suas necessidades e verificar se o
-                    procedimento é adequado para você.
-                </p>
-            </article>
-
-            <article class="benefit-card reveal">
-                <div class="benefit-icon">♡</div>
-
-                <h3>Beleza personalizada</h3>
-
-                <p>
-                    Cada pessoa é única. O planejamento deve
-                    considerar suas características, sua saúde
-                    e seus objetivos.
-                </p>
-            </article>
-
-            <article class="benefit-card reveal">
-                <div class="benefit-icon">❋</div>
-
-                <h3>Cuidado responsável</h3>
-
-                <p>
-                    Orientações claras sobre indicações,
-                    contraindicações, possíveis riscos e cuidados
-                    antes e depois do procedimento.
-                </p>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<!-- DATA E LOCAL -->
-
-<section class="section" id="evento">
-    <div class="container">
-
-        <div class="section-title reveal">
-            <span class="eyebrow">Reserve essa data</span>
-
-            <h2>
-                Nosso encontro está chegando.
-            </h2>
-
-            <p>
-                Entre em contato para consultar os horários disponíveis
-                e receber as informações completas.
-            </p>
-        </div>
-
-        <div class="event-card reveal">
-
-            <div class="event-date">
-                <span class="month">Novembro</span>
-                <span class="day">07</span>
-                <span class="year">2026</span>
-            </div>
-
-            <div class="event-details">
-
-                <span class="eyebrow">Botox Day • Edição especial</span>
-
-                <h3>
-                    Seu momento de autocuidado.
-                </h3>
-
-                <div class="event-detail">
-                    <span class="symbol">▦</span>
-
-                    <div>
-                        <strong>Data do evento</strong>
-                        <p>Sábado, 07 de novembro de 2026</p>
-                    </div>
-                </div>
-
-                <div class="event-detail">
-                    <span class="symbol">◷</span>
-
-                    <div>
-                        <strong>Horários</strong>
-                        <p id="eventHours">Consulte os horários disponíveis.</p>
-                    </div>
-                </div>
-
-                <div class="event-detail">
-                    <span class="symbol">⌖</span>
-
-                    <div>
-                        <strong>Local</strong>
-                        <p id="eventAddress">
-                            Endereço da sua clínica
-                        </p>
-                    </div>
-                </div>
-
-                <div class="countdown" aria-label="Contagem regressiva">
-
-                    <div class="countdown-box">
-                        <strong id="days">00</strong>
-                        <span>Dias</span>
-                    </div>
-
-                    <div class="countdown-box">
-                        <strong id="hours">00</strong>
-                        <span>Horas</span>
-                    </div>
-
-                    <div class="countdown-box">
-                        <strong id="minutes">00</strong>
-                        <span>Minutos</span>
-                    </div>
-
-                    <div class="countdown-box">
-                        <strong id="seconds">00</strong>
-                        <span>Segundos</span>
-                    </div>
-
-                </div>
-
-                <a href="#" class="btn whatsapp-link">
-                    Reservar meu horário ↗
-                </a>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CHAMADA PARA AÇÃO -->
-
-<section class="cta">
-    <div class="container reveal">
-
-        <span class="eyebrow">Poucos passos até seu agendamento</span>
-
-        <h2>
-            Que tal reservar um momento só para você?
-        </h2>
-
-        <p>
-            Fale diretamente com nossa equipe pelo WhatsApp,
-            consulte a disponibilidade e receba as orientações
-            para participar do Botox Day.
-        </p>
-
-        <a href="#" class="btn whatsapp-link">
-            💬 Agendar pelo WhatsApp
-        </a>
-
-    </div>
-</section>
-
-<!-- PERGUNTAS FREQUENTES -->
-
-<section class="section" id="duvidas">
-    <div class="container">
-
-        <div class="section-title reveal">
-            <span class="eyebrow">Estamos aqui para ajudar</span>
-
-            <h2>
-                Dúvidas frequentes.
-            </h2>
-
-            <p>
-                Confira algumas informações importantes antes
-                de agendar sua avaliação.
-            </p>
-        </div>
-
-        <div class="faq-list reveal">
-
-            <div class="faq-item">
-                <button class="faq-question"
-                        aria-expanded="false">
-                    O que é o Botox Day?
-                    <span>+</span>
-                </button>
-
-                <div class="faq-answer">
-                    É uma data especial de atendimento estético,
-                    com horários organizados para avaliação e,
-                    quando indicado, realização do procedimento
-                    por profissional legalmente habilitado.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question"
-                        aria-expanded="false">
-                    Como faço para agendar?
-                    <span>+</span>
-                </button>
-
-                <div class="faq-answer">
-                    Clique em qualquer botão de agendamento para
-                    abrir uma conversa com nossa equipe pelo
-                    WhatsApp. Informe seu nome e o horário
-                    desejado para consultar a disponibilidade.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question"
-                        aria-expanded="false">
-                    O procedimento é indicado para todas as pessoas?
-                    <span>+</span>
-                </button>
-
-                <div class="faq-answer">
-                    Não necessariamente. A indicação depende
-                    de avaliação individual, histórico de saúde,
-                    contraindicações e análise do profissional
-                    habilitado. Nem todas as pessoas são candidatas
-                    ao procedimento.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question"
-                        aria-expanded="false">
-                    O resultado é imediato?
-                    <span>+</span>
-                </button>
-
-                <div class="faq-answer">
-                    Não. Os efeitos da toxina botulínica aparecem
-                    gradualmente, geralmente ao longo de alguns dias.
-                    O tempo e o resultado variam de pessoa para pessoa.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question"
-                        aria-expanded="false">
-                    Onde será realizado o evento?
-                    <span>+</span>
-                </button>
-
-                <div class="faq-answer">
-                    O Botox Day será realizado no endereço informado
-                    nesta página. Entre em contato pelo WhatsApp
-                    para confirmar a localização e receber as
-                    orientações de chegada.
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-</main>
-
-<!-- RODAPÉ -->
-
-<footer>
-    <div class="container">
-
-        <div class="footer-logo" id="footerClinic">
-            Sua Clínica
-        </div>
-
-        <p>
-            Cuidado, acolhimento e responsabilidade em cada etapa
-            da sua experiência estética.
-        </p>
-
-        <div class="footer-links">
-            <a href="#inicio">Início</a>
-            <a href="#sobre">O evento</a>
-            <a href="#evento">Data e local</a>
-            <a href="#duvidas">Dúvidas</a>
-            <a href="#" class="whatsapp-link">WhatsApp</a>
-        </div>
-
-        <p>
-            Os procedimentos dependem de avaliação individual e
-            indicação profissional. Resultados variam conforme
-            cada pessoa. Nenhum resultado específico é garantido.
-        </p>
-
-        <div class="copyright">
-            © <span id="currentYear">2026</span>
-            <span id="copyrightClinic">Sua Clínica</span>.
-            Todos os direitos reservados.
-        </div>
-
-    </div>
-</footer>
-
-<!-- BOTÃO FIXO DO WHATSAPP -->
-
-<a href="#"
-   class="whatsapp-float whatsapp-link"
-   aria-label="Agendar pelo WhatsApp"
-   title="Agendar pelo WhatsApp">
-    ☎
-</a>
-
-<script>
-
-/* ==========================================
-   PERSONALIZE AS INFORMAÇÕES NESTE BLOCO
-   ========================================== */
-
-const CONFIG = {
-
-    // Nome da clínica ou profissional
-    clinicName: "Sua Clínica",
-
-    // WhatsApp com DDI e DDD, somente números.
-    // Exemplo fictício: 5511999999999
-    whatsapp: "5511999999999",
-
-    // Data do evento: ano, mês (0 = janeiro) e dia
-    eventDate: new Date(2026, 10, 7, 9, 0, 0),
-
-    // Horário de atendimento
-    eventHours: "Das 09h às 17h, mediante agendamento",
-
-    // Endereço completo
-    address: "Rua da sua clínica, nº 100 - Centro, Sua Cidade",
-
-    // Link do Google Maps.
-    // Substitua pelo link real da localização.
-    mapsUrl: "",
-
-    // Mensagem automática do WhatsApp
-    message:
-        "Olá! Vim pelo site e gostaria de agendar meu horário " +
-        "para o Botox Day do dia 07/11/2026. " +
-        "Poderiam me informar os horários disponíveis?"
-
-};
-
-/* ==========================================
-   ATUALIZAÇÃO DAS INFORMAÇÕES
-   ========================================== */
-
-document.title =
-    "Botox Day | " + CONFIG.clinicName;
-
-document.querySelectorAll(".logo").forEach(element => {
-    element.childNodes[0].textContent =
-        CONFIG.clinicName + " ";
-});
-
-document.getElementById("footerClinic").textContent =
-    CONFIG.clinicName;
-
-document.getElementById("copyrightClinic").textContent =
-    CONFIG.clinicName;
-
-document.getElementById("eventHours").textContent =
-    CONFIG.eventHours;
-
-const addressElement =
-    document.getElementById("eventAddress");
-
-addressElement.textContent = CONFIG.address;
-
-if (CONFIG.mapsUrl) {
-    const mapLink = document.createElement("a");
-
-    mapLink.href = CONFIG.mapsUrl;
-    mapLink.target = "_blank";
-    mapLink.rel = "noopener noreferrer";
-    mapLink.textContent = "Ver localização no mapa ↗";
-    mapLink.style.display = "inline-block";
-    mapLink.style.marginTop = "6px";
-    mapLink.style.color = "#9e7c47";
-
-    addressElement.appendChild(
-        document.createElement("br")
-    );
-
-    addressElement.appendChild(mapLink);
-}
-
-document.getElementById("currentYear").textContent =
-    new Date().getFullYear();
-
-/* ==========================================
-   WHATSAPP
-   ========================================== */
-
-function getWhatsAppUrl() {
-
-    const phone = CONFIG.whatsapp.replace(/\D/g, "");
-
-    const message = encodeURIComponent(CONFIG.message);
-
-    return "https://wa.me/" + phone + "?text=" + message;
-}
-
-document.querySelectorAll(".whatsapp-link").forEach(link => {
-
-    link.href = getWhatsAppUrl();
-
-    link.target = "_blank";
-
-    link.rel = "noopener noreferrer";
-
-    link.addEventListener("click", function(event) {
-
-        const phone = CONFIG.whatsapp.replace(/\D/g, "");
-
-        if (!phone || phone === "5511999999999") {
-            event.preventDefault();
-
-            alert(
-                "Configure o número real do WhatsApp no objeto " +
-                "CONFIG, no final do arquivo HTML, antes de publicar."
-            );
-        }
-
-    });
-
-});
-
-/* ==========================================
-   MENU PARA CELULAR
-   ========================================== */
-
-const menuToggle =
-    document.getElementById("menuToggle");
-
-const navLinks =
-    document.getElementById("navLinks");
-
-menuToggle.addEventListener("click", () => {
-
-    const isOpen = navLinks.classList.toggle("open");
-
-    menuToggle.setAttribute("aria-expanded", isOpen);
-
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Fechar menu" : "Abrir menu"
-    );
-
-    menuToggle.textContent = isOpen ? "×" : "☰";
-
-});
-
-document.querySelectorAll("#navLinks a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("open");
-
-        menuToggle.setAttribute("aria-expanded", "false");
-
-        menuToggle.textContent = "☰";
-
-    });
-
-});
-
-/* ==========================================
-   ANIMAÇÕES AO ROLAR A PÁGINA
-   ========================================== */
-
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-if ("IntersectionObserver" in window) {
-
-    const observer = new IntersectionObserver(
-        (entries, obs) => {
-
-            entries.forEach(entry => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("visible");
-
-                    obs.unobserve(entry.target);
-
-                }
-
-            });
-
-        },
-        {
-            threshold: 0.12
-        }
-    );
-
-    revealElements.forEach(element => {
-        observer.observe(element);
-    });
-
-} else {
-
-    revealElements.forEach(element => {
-        element.classList.add("visible");
-    });
-
-}
-
-/* ==========================================
-   PERGUNTAS FREQUENTES
-   ========================================== */
-
-document.querySelectorAll(".faq-question").forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const item = button.closest(".faq-item");
-
-        const isActive = item.classList.contains("active");
-
-        document.querySelectorAll(".faq-item").forEach(faq => {
-
-            faq.classList.remove("active");
-
-            faq.querySelector(".faq-question")
-                .setAttribute("aria-expanded", "false");
-
-        });
-
-        if (!isActive) {
-
-            item.classList.add("active");
-
-            button.setAttribute("aria-expanded", "true");
-
-        }
-
-    });
-
-});
-
-/* ==========================================
-   CONTAGEM REGRESSIVA
-   ========================================== */
-
-const countdownIds = [
-    "days",
-    "hours",
-    "minutes",
-    "seconds"
-];
-
-function updateCountdown() {
-
-    const now = new Date();
-
-    const difference =
-        CONFIG.eventDate.getTime() - now.getTime();
-
-    if (difference <= 0) {
-
-        countdownIds.forEach(id => {
-            document.getElementById(id).textContent = "00";
-        });
-
-        const boxes =
-            document.querySelector(".countdown");
-
-        if (now.getTime() >= CONFIG.eventDate.getTime()) {
-
-            boxes.setAttribute(
-                "aria-label",
-                "A data inicial do evento já chegou"
-            );
-
-        }
-
-        return;
-    }
-
-    const days = Math.floor(
-        difference / (1000 * 60 * 60 * 24)
-    );
-
-    const hours = Math.floor(
-        (difference / (1000 * 60 * 60)) % 24
-    );
-
-    const minutes = Math.floor(
-        (difference / (1000 * 60)) % 60
-    );
-
-    const seconds = Math.floor(
-        (difference / 1000) % 60
-    );
-
-    document.getElementById("days").textContent =
-        String(days).padStart(2, "0");
-
-    document.getElementById("hours").textContent =
-        String(hours).padStart(2, "0");
-
-    document.getElementById("minutes").textContent =
-        String(minutes).padStart(2, "0");
-
-    document.getElementById("seconds").textContent =
-        String(seconds).padStart(2, "0");
-
-}
-
-updateCountdown();
-
-setInterval(updateCountdown, 1000);
-
-</script>
-
-</body>
-</html>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label">Evento Exclusivo</span>
