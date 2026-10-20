@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Botox Day | A&L</title>
+<title>Botox Day | A&amp;L</title>
 
 <meta name="description"
 content="Um dia especial dedicado à sua beleza e autoestima. Conheça nosso Botox Day e agende seu horário pelo WhatsApp.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+<link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
 rel="stylesheet">
 
 <style>
@@ -187,28 +187,20 @@ header {
 }
 
 /* BANNER */
-
 .hero {
     min-height: 640px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(250,248,244,.98) 0%,
-            rgba(250,248,244,.92) 43%,
-            rgba(250,248,244,.12) 100%
-        ),
-        url('img/novo-topo-botox.jpg')
-        center 35% / cover no-repeat;
+    background: linear-gradient(90deg, rgba(250,248,244,.98) 0%, rgba(250,248,244,.92) 43%, rgba(250,248,244,.12) 100%), #faf8f4;
 }
 
 .hero-content {
     max-width: 590px;
     padding: 85px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-label {
@@ -255,7 +247,6 @@ header {
 }
 
 /* FAIXA */
-
 .info-strip {
     background: var(--white);
     border-bottom: 1px solid #f0ece5;
@@ -297,7 +288,6 @@ header {
 }
 
 /* SOBRE */
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -308,9 +298,7 @@ header {
 .about-image {
     min-height: 490px;
     position: relative;
-    background:
-        url('img/foto-procedimento.jpg')
-        center / cover no-repeat;
+    background: #e9dcc5;
 }
 
 .image-caption {
@@ -365,7 +353,6 @@ header {
 }
 
 /* BENEFÍCIOS */
-
 .benefits {
     background: var(--cream);
 }
@@ -404,7 +391,6 @@ header {
 }
 
 /* EVENTO */
-
 .event {
     background: #fff;
     padding: 100px 0;
@@ -476,7 +462,6 @@ header {
     font-size: .86rem;
 }
 
-/* FOOTER ADICIONADO PARA FECHAMENTO CORRETO */
 footer {
     background: #49443d;
     color: #fff;
@@ -498,7 +483,7 @@ footer a {
 <header>
     <div class="container nav">
         <div class="logo">
-            A&L
+            A&amp;L
             <small>Estética Avançada</small>
         </div>
         <nav class="nav-links">
@@ -516,7 +501,7 @@ footer a {
             <div class="hero-content">
                 <span class="hero-label">Evento Exclusivo</span>
                 <h1>Botox <span>Day</span></h1>
-                <p>Resgate a juventude da sua pele com naturalidade. Um dia planejado minuciosamente pela clínica A&L para cuidar de você.</p>
+                <p>Resgate a juventude da sua pele com naturalidade. Um dia planejado minuciosamente pela clínica A&amp;L para cuidar de você.</p>
                 <div class="hero-buttons">
                     <a href="https://wa.me" target="_blank" class="btn">Quero Participar</a>
                     <a href="#sobre" class="btn btn-outline">Saber Mais</a>
@@ -530,8 +515,10 @@ footer a {
         <div class="container about-grid">
             <div class="about-image">
                 <div class="image-caption">
-                    <strong>A&L</strong>
-                    <span>Excelência & Cuidado</span>
+                    <strong>A&amp;L</strong>
+                    <span>Excelência &amp; Cuidado</span>
                 </div>
             </div>
             <div class="about-text">
+                <span class="eyebrow">Por que participar?</span>
+                <h2>Sua pele renovada em uma única sessão</h2>
