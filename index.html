@@ -9,10 +9,10 @@
 <meta name="description"
 content="Um dia especial dedicado à sua beleza e autoestima. Conheça nosso Botox Day e agende seu horário pelo WhatsApp.">
 
-<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://gstatic.com" crossorigin>
 
-<link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+<link href="https://googleapis.com"
 rel="stylesheet">
 
 <style>
@@ -179,22 +179,31 @@ header {
     color: var(--gold-dark);
 }
 
-/* BANNER */
+/* BANNER ATUALIZADO */
 .hero {
     min-height: 640px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background:
+    background-image: 
         linear-gradient(
             90deg,
-            rgba(250,248,244,.98) 0%,
-            rgba(250,248,244,.92) 43%,
-            rgba(250,248,244,.12) 100%
+            rgba(250,248,244,0.95) 0%,
+            rgba(250,248,244,0.85) 45%,
+            rgba(250,248,244,0.10) 100⁒
         ),
-        url('img/novo-topo-botox.jpg')
-        center 35% / cover no-repeat;
+        url('img/novo-topo-botox.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
 }
 
 .hero-content {
@@ -548,10 +557,3 @@ header {
                 <a href="#valores">Valores</a>
                 <a href="#" class="btn btn-whatsapp" target="_blank">Agendar Horário</a>
             </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-label">Evento Exclusivo</span>
